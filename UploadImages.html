@@ -46,7 +46,7 @@
             background-color: #ed1c24;
             border: 1px solid #ed1c24;
             color: #ffffff;
-            padding: 18px 80px 18px 80px;
+            /* padding: 18px 80px 18px 80px; */
             border-radius: 13px;
             font-size: 18px;
             font-weight: 200;
@@ -212,7 +212,46 @@
             align-items: center;
             gap: 0.6rem;
             justify-content: center;
-            padding: 10px;
+            width: 85%;
+            padding: 15px;
+        }
+
+        .upper-main1 h2 {
+            margin-bottom: 0;
+        }
+
+        .upper-main1 h4 {
+            margin: 0;
+            font-weight: 100;
+        }
+
+        .middle {
+            margin-top: 10px;
+            display: block;
+            width: 85%;
+            margin: auto;
+        }
+
+        .middle input {
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        section.section1 {
+            height: 83vh;
+            border-radius: 25px 25px 0 0;
+        }
+
+        button.btn {
+            border-radius: 13px;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            justify-content: center;
+            padding: 15px;
             width: 85%;
         }
 
@@ -274,19 +313,19 @@
                 <div class="upload-form">
                     <form>
                         <label for="fname"></label><br>
-                        <input type="text" id="fname" name="fname" placeholder="Name of Retail Store"><br>
+                        <input type="text" id="fname" name="fname" placeholder="Name of Retail Store*"><br>
                         <label for="lname"></label><br>
-                        <input type="text" id="lname" name="lname" placeholder="Location | Town"><br><br>
+                        <input type="text" id="lname" name="lname" placeholder="Location | Town*"><br><br>
                         <input type="text" id="lname" name="lname" placeholder="Retailer Type*"><br><br>
                         <input type="text" id="lname" name="lname" placeholder="Reporting Manager*"><br><br>
-                        <input type="text" id="lname" name="lname" placeholder="Team"><br><br>
+                        <input type="text" id="lname" name="lname" placeholder="Team*"><br><br>
 
                     </form>
                 </div>
 
             </div>
             <div class="lower">
-                <button>Add Images</button>
+                <button class="btn">Add Images</button>
             </div>
         </div>
     </section>
