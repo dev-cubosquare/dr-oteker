@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .complete {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .data h1 {
+            color: #ed1c24;
+        }
+
+        .upper {
+            padding-top: 22px;
+        }
+
+        section.section1 {
+            border: 2px solid #ed1c24;
+            border-radius: 11px;
+            height: 90vh;
+        }
+
+        .upper-main button {
+            background-color: #ed1c24;
+            border: 1px solid #ed1c24;
+            color: #ffffff;
+        }
+
+        .upper-main button {
+            background-color: #ed1c24;
+            border: 1px solid #ed1c24;
+            color: #ffffff;
+            padding: 18px 127px 18px 26px;
+            border-radius: 13px;
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        .fa-camera:before {
+            content: "\f030";
+            padding-right: 10px;
+        }
+
+        .upper-main {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        span {
+            padding-left: 120px;
+        }
+
+
+
+
+        .upper {
+            padding-top: 22px;
+        }
+
+        .middle-main-button button {
+            background-color: #ed1c24;
+            color: #fff;
+            border: 1px solid #ed1c24;
+            padding: 6px 16px 6px 16px;
+            border-radius: 13px;
+            font-weight: 100;
+            position: absolute;
+            top: 142px;
+            left: 218px;
+        }
+
+        .middle-main-data img {
+            width: 20rem;
+            margin-top: 31px;
+            position: relative;
+        }
+
+        .middle-main-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .middle-main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
+
+        .lower button {
+            padding: 10px 100px 10px 100px;
+            background-color: #ed1c24;
+            color: #ffffff;
+            border: 1px solid #ed1c24;
+            border-radius: 13px;
+            font-size: 18px;
+        }
+
+
+        .lower {
+
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+
+        .upper-main1 {
+            text-align: center;
+        }
+
+        .upper-main1 h2 {
+            color: #d1cfcf;
+            font-size: 15px;
+        }
+
+        .upper-main1 h4 {
+            color: #ed1c24;
+        }
+
+        input#lname {
+            border: 1px solid #ed1c24;
+        }
+
+        input#fname {
+            border: 1px solid #ed1c24;
+        }
+
+        .middle {
+            display: flex;
+            justify-content: center;
+        }
+
+        input#fname {
+            border: 1px solid #ed1c24;
+            padding: 15px 123px 15px 10px;
+            border-radius: 14px;
+        }
+
+        input#lname {
+            border: 1px solid #ed1c24;
+            padding: 15px 123px 15px 10px;
+            border-radius: 14px;
+        }
+
+        .lower button {
+            padding: 15px 100px 15px 100px;
+            color: #ed1c24;
+            border: 1px solid #ed1c24;
+            border-radius: 13px;
+            font-size: 18px;
+            background-color: #ffffff;
+            position: absolute;
+            bottom: 73px;
+        }
+
+        .lower {
+            padding-top: 5;
+            display: flex;
+            justify-content: center;
+        }
+
+        .fa-user-circle-o:before {
+            content: "\f2be";
+            font-size: 23px;
+            padding-right: 62px;
+        }
+
+        @media screen and (max-width: 375px) {
+            .upload-form h1{
+                padding: 13px !important;
+            }
+        }
+
+        @media screen and (max-width: 360px) {
+            .upload-form h1{
+                padding: 13px;
+            }
+        }
+
+
+        .upload-form h1 {
+            border: 1px solid #ed1c24;
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 15px;
+            color: #ed1c24;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <section class="section0">
+            <script>
+                $(document).ready(function () {
+                    $(".humburger").click(function () {
+                        $("#menu").toggleClass("open");
+                    });
+                });
+            </script>
+            <div class="humburger">
+                <div class="hum"></div>
+                <div class="hum"></div>
+                <div class="hum"></div>
+            </div>
+            <nav>
+                <div class="navbar">
+                    <ul id="menu">
+                        <li>home</li>
+                        <li>upload image</li>
+                        <li>view gallery</li>
+                        <li>my uploads</li>
+                        <li>profile</li>
+                        <li>about the program</li>
+                        <li>how to use</li>
+                        <li>team & condition</li>
+                        <li>help desk</li>
+                        <li>sign out</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="logo1">
+                <h2 class="logo_text">Hello Snehashish</h2>
+                <img class="image_logo1" src="logo.png" alt="logo" >
+            </div>
+        </section>
+    </header>
+    <section class="section1">
+        <div class="bundle">
+            <div class="upper">
+                <div class="upper-main">
+                    <button><i class="fa fa-user-circle-o" aria-hidden="true"></i> My Profile</button>
+                </div>
+                <div class="upper-main1">
+                    <h2>Please enter the below details to continue</h2>
+                    <h4>Field marked * are mandotary</h4>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="upload-form">
+                    <h1>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Snehashish Das</h1>
+                    <h1>Oetkar Id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OET 1234</h1>
+                    <h1>Designation:&nbsp;&nbsp;&nbsp;&nbsp;Sales Representative</h1>
+                    <h1>Location:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mumbai</h1>
+                    <h1>Team:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modern Trade</h1>
+                    <h1>Repoting<br> Manager:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oetkar Exec</h1>
+                </div>
+
+            </div>
+            <div class="lower">
+               
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Oetker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @media only screen and (max-width: 764px) {
+            .user {
+                display: flex;
+                /* justify-content: space-between; */
+                border: 2px solid;
+                color: #ed1c24;
+                width: 89%;
+                border-radius: 15px;
+                height: 50px;
+                font-size: 30px;
+                gap: 96px;
+            }
+
+            .lable {
+                /* padding-left: 25px; */
+                font-weight: 100;
+                padding: 5px 25px;
+            }
+
+            input[type="text"] {
+                border: none;
+                outline: none;
+            }
+
+            .material-symbols-outlined {
+                font-size: 2rem;
+                font-weight: 300;
+                color: red;
+                margin: 10px;
+            }
+
+            .logo {
+                text-align: center;
+
+            }
+
+            .logo img {
+                margin: 2rem 0 0;
+            }
+
+            html {
+                min-height: 100%;
+                position: relative;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+
+            .lable {
+                color: #888;
+                padding: 5px 0 0 25px;
+                font-size: 28px;
+            }
+
+            .input {
+                padding: 5px 0 0 25px;
+            }
+
+            input::placeholder {
+                font-size: 28px;
+                opacity: 0.7;
+            }
+
+            input {
+                width: 100%;
+                font-size: 28px;
+            }
+
+            input[type="password"] {
+                border: none;
+                outline: none;
+            }
+
+            .user {
+                display: grid;
+                grid-template-columns: 2fr 3fr;
+                gap: initial;
+                overflow: hidden;
+            }
+
+            .get_started_btn_1 {
+                margin-top: 35px;
+            }
+
+            .get_started_btn_1 a {
+                color: white;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <span class="material-symbols-outlined">
+        keyboard_double_arrow_left
+    </span>
+    <!-- <i class="fa-solid fa-angles-left"></i> -->
+    <div class="logo">
+
+        <img class="image_logo" src="logo.png" alt="logo">
+    </div>
+    <div class="content">
+        <h2 class=" title_1">Hello! Please enter your details to login</h2>
+    </div>
+    <div class="form">
+        <div class="user">
+            <div class="lable">User ID</div>
+            <div class="input"><input type="text" placeholder="OET -XXXX"></div>
+        </div>
+        <div class="user">
+            <div class="lable">Password</div>
+            <div class="input"><input type="password" placeholder="*****"></div>
+        </div>
+        <button class="get_started_btn_1"> <a href="./home.html">login</a></button>
+    </div>
+    <footer class="footer">
+        <h3 class="alredy_1">Forgot Password? <span class="tap">Tap here to reset</span></h3>
+    </footer>
+</body>
+
+</html>

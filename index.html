@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Oetker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media screen and (max-width: 400px) {
+            .button {
+                padding: 0px 2.9rem;
+            }
+        }
+
+        @media screen and (max-width: 764px) {
+            .button {
+                text-align: center;
+                position: absolute;
+                top: 88%;
+                padding: 0px 2.1rem;
+            }
+
+            button.get_started_btn {
+                padding: 1rem 5rem 1rem 5rem;
+                font-size: 21px;
+                text-transform: capitalize;
+                background-color: #ed1d25;
+                color: #fff;
+                border: none;
+                border-radius: 25px;
+                width: 21rem;
+            }
+
+            h3.alredy {
+                padding-top: unset;
+                /* text-transform: capitalize; */
+                color: #a4a0a087;
+                font-weight: 200;
+                font-size: unset;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="get-started">
+        <div class="logo">
+            <img class="image_logo" src="logo.png" alt="logo">
+        </div>
+        <div class="content">
+            <h2 class="tittle" style="font-weight: 500;">Welcome Message</h2>
+            <h2 class="miniheading" style=" margin-top: -1rem;">(Content to be decided)</h2>
+        </div>
+        <div class="button">
+            <a href="./login.html">
+                <button class="get_started_btn">GET STARTED</button>
+            </a>
+            <h3 class="alredy">alredy registed? <span class="tap"><a href="./login.html" style="color: #ed1d25 !important;"> Tab Here</a></span></h3>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        .complete {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .data h1 {
+            color: #ed1c24;
+        }
+
+        .upper {
+            padding-top: 22px;
+        }
+
+        section.section1 {
+            border: 2px solid #ed1c24;
+            border-radius: 11px;
+            height: 86vh;
+        }
+
+        .upper-main button {
+            background-color: #ed1c24;
+            border: 1px solid #ed1c24;
+            color: #ffffff;
+        }
+
+        .upper-main button {
+            background-color: #ed1c24;
+            border: 1px solid #ed1c24;
+            color: #ffffff;
+            /* text-align: left; */
+            padding: 10px 16px 10px 16px;
+            border-radius: 13px;
+            font-size: 18px;
+            /* margin-left: 2px; */
+            font-weight: 200;
+        }
+
+        .upper-main {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        span {
+            padding-left: 120px;
+        }
+
+        .fa-database:before {
+            content: "\f1c0";
+            font-size: 21px;
+        }
+
+        .fa-clock-o:before {
+            content: "\f017";
+            font-size: 23px;
+            padding-right: 15px;
+        }
+
+
+        .upper {
+            padding-top: 22px;
+        }
+
+        .middle-main-button button {
+            background-color: #ed1c24;
+            color: #fff;
+            border: 1px solid #ed1c24;
+            padding: 6px 16px 6px 16px;
+            border-radius: 13px;
+            font-weight: 100;
+            position: absolute;
+            top: 142px;
+            left: 218px;
+        }
+
+        .middle-main-data img {
+            width: 20rem;
+            margin-top: 31px;
+            position: relative;
+        }
+
+        .middle-main-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .middle-main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
+
+        .lower button {
+            padding: 10px 100px 10px 100px;
+            background-color: #ed1c24;
+            color: #ffffff;
+            border: 1px solid #ed1c24;
+            border-radius: 13px;
+            font-size: 18px;
+            position: absolute;
+            bottom: 58px;
+        }
+
+        .lower {
+            padding-top: 350px;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+
+        .fa-photo:before,
+        .fa-image:before,
+        .fa-picture-o:before {
+            content: "\f03e";
+            font-size: 23px;
+            padding-right: 15px;
+        }
+
+        .hamburger {
+            display: flex;
+            justify-content: flex-end;
+            color: #ed1c24;
+            font-size: 28px;
+        }
+
+        .middle {
+            padding-top: 48px;
+        }
+
+        .\31 st {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .box {
+            border: 1px solid #d9d9d9;
+            padding: 50px;
+            width: 50px;
+            height: 33px;
+            border-radius: 13px;
+            background-color: #d9d9d9;
+        }
+
+        @media screen and (max-width: 375px) {
+            .\31 st {
+                padding-top: 15px;
+            }
+
+            .box {
+                border: 1px solid #d9d9d9;
+                padding: 50px;
+                width: 12px;
+                height: 6px;
+                border-radius: 13px;
+                background-color: #d9d9d9;
+            }
+
+            .middle {
+                padding-top: 4px;
+            }
+        }
+
+        .logo1 {
+            margin: 4% 25px 0;
+        }
+
+        .logo_text {
+            flex: 1;
+            text-align: center;
+            padding-left: 25px;
+        }
+
+        .upper-main .img img {
+            width: 100%;
+        }
+
+        .upper-main .img {
+            width: 25px;
+            display: inline-flex;
+        }
+
+        .upper-main button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 85%;
+            padding: 12px 20px;
+        }
+
+        .upper-main span {
+            padding: 0;
+        }
+
+        .upper-main .text {
+            flex: 1;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .flex_box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 40px auto 1px;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .flex_box .box {
+            flex-basis: 45%;
+            aspect-ratio: 1;
+            height: auto;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        section.section1 {
+            height: 742px;
+            border-radius: 25px 25px 0 0;
+        }
+
+        .bundle {
+
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <section class="section0">
+            <script>
+                $(document).ready(function () {
+                    $(".humburger").click(function () {
+                        $("#menu").toggleClass("open");
+                    });
+                });
+            </script>
+            <div class="humburger">
+                <div class="hum"></div>
+                <div class="hum"></div>
+                <div class="hum"></div>
+            </div>
+            <nav>
+                <div class="navbar">
+                    <ul id="menu">
+                        <li>home</li>
+                        <li>upload image</li>
+                        <li>view gallery</li>
+                        <li>my uploads</li>
+                        <li>profile</li>
+                        <li>about the program</li>
+                        <li>how to use</li>
+                        <li>team & condition</li>
+                        <li>help desk</li>
+                        <li>sign out</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="logo1">
+                <h2 class="logo_text">Hello Snehashish</h2>
+                <img class="image_logo1" src="logo.png" alt="logo">
+            </div>
+        </section>
+    </header>
+    <section class="section1">
+        <div class="bundle">
+            <div class="upper">
+                <div class="upper-main">
+                    <button>
+                        <span class="img"><img src="./img/picture-m.png"></span>
+                        <span class="text">
+                            Gallery View
+                        </span>
+                        <span class="img"><img src="./img/stack.png"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="flex_box">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

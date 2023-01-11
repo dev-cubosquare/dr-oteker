@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+            .complete {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .data h1 {
+            color: #ed1c24;
+        }
+
+        .upper {
+    padding-top: 22px;
+}
+
+section.section1 {
+    border: 2px solid #ed1c24;
+    border-radius: 11px;
+    height: 90vh;
+}
+
+.upper-main button {
+    background-color: #ed1c24;
+    border: 1px solid #ed1c24;
+    color: #ffffff;
+}
+
+.upper-main button {
+    background-color: #ed1c24;
+    border: 1px solid #ed1c24;
+    color: #ffffff;
+    /* text-align: left; */
+    padding: 10px 16px 10px 16px;
+    border-radius: 13px;
+    font-size: 18px;
+    /* margin-left: 2px; */
+    font-weight: 200;
+}
+
+.upper-main {
+    display: flex;
+    justify-content: center;
+}
+
+
+span {
+    padding-left: 120px;
+}
+
+.fa-database:before {
+    content: "\f1c0";
+    font-size: 21px;
+}
+
+.fa-clock-o:before {
+    content: "\f017";
+    font-size: 23px;
+    padding-right: 15px;
+}
+
+
+.upper {
+    padding-top: 22px;
+}
+
+.middle-main-button button {
+    background-color: #ed1c24;
+    color: #fff;
+    border: 1px solid #ed1c24;
+    padding: 6px 16px 6px 16px;
+    border-radius: 13px;
+    font-weight: 100;
+    position: absolute;
+    top: 142px;
+    left: 218px;
+}
+
+.middle-main-data img {
+    width: 20rem;
+    margin-top: 31px;
+    position: relative;
+}
+
+.middle-main-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+} 
+
+.middle-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.lower button {
+    padding: 10px 100px 10px 100px;
+    background-color: #ed1c24;
+    color: #ffffff;
+    border: 1px solid #ed1c24;
+    border-radius: 13px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 58px;
+}
+
+.lower {
+    padding-top: 350px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}  
+
+ 
+
+      
+
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <section class="section0">
+            <script>
+                $(document).ready(function () {
+                    $(".humburger").click(function () {
+                        $("#menu").toggleClass("open");
+                    });
+                });
+            </script>
+            <div class="humburger">
+                <div class="hum"></div>
+                <div class="hum"></div>
+                <div class="hum"></div>
+            </div>
+            <nav>
+                <div class="navbar">
+                    <ul id="menu">
+                        <li>home</li>
+                        <li>upload image</li>
+                        <li>view gallery</li>
+                        <li>my uploads</li>
+                        <li>profile</li>
+                        <li>about the program</li>
+                        <li>how to use</li>
+                        <li>team & condition</li>
+                        <li>help desk</li>
+                        <li>sign out</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="logo1">
+                <h2 class="logo_text">Hello Snehashish</h2>
+                <img class="image_logo1" src="logo.png" alt="logo" >
+            </div>
+        </section>
+    </header>
+    <section class="section1">
+        <div class="bundle">
+            <div class="upper">
+                <div class="upper-main">
+                    <button><i class="fa fa-clock-o" aria-hidden="true"></i> My Uploads<span><i class="fa fa-database" aria-hidden="true"></i></span></button>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="middle-main">
+                    <div class="middle-main-data">
+                        <img src="images/image background.PNG">
+                    </div>
+                    <div class="middle-main-button">
+                        <button>ABCD EFG</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="lower">
+                <button>Add Images</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
