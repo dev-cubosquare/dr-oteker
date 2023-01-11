@@ -180,17 +180,6 @@
             padding-right: 62px;
         }
 
-        @media screen and (max-width: 375px) {
-            .upload-form h1 {
-                padding: 13px !important;
-            }
-        }
-
-        @media screen and (max-width: 360px) {
-            .upload-form h1 {
-                padding: 13px;
-            }
-        }
 
 
         .upload-form h1 {
@@ -199,6 +188,85 @@
             padding: 20px;
             border-radius: 15px;
             color: #f9022a;
+        }
+
+        .upload-form p span {
+            padding: 0;
+        }
+
+        .upload-form p {
+            border: 1px solid #f9022a;
+            font-size: 18px;
+            padding: 16px;
+            border-radius: 15px;
+            color: #f9022a;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+
+
+        .logo1 {
+            margin: 4% 25px 0;
+        }
+
+        .logo_text {
+            flex: 1;
+            text-align: center;
+            padding-left: 25px;
+        }
+
+        .upper-main .img img {
+            width: 100%;
+        }
+
+        .upper-main .img {
+            width: 25px;
+            display: inline-flex;
+        }
+
+        .upper-main button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 85%;
+            padding: 16px 20px;
+        }
+
+        .upper-main span {
+            padding: 0;
+        }
+
+        .upper-main .text {
+            flex: 1;
+            padding-left: 20px;
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        section.section1 {
+            height: 83vh;
+            border-radius: 25px 25px 0 0;
+        }
+
+
+        .upper-main1 h2 {
+            margin-bottom: 0;
+        }
+
+        .upper-main1 h4 {
+            margin: 0;
+            font-weight: 100;
+        }
+
+        .middle {
+            width: 85%;
+            margin: auto;
+            margin-top: 30px;
+            display: block;
         }
 
     </style>
@@ -237,7 +305,7 @@
                 </div>
             </nav>
             <div class="logo1">
-                <h2 class="logo_text">Hello Snehashish</h2>
+                <h2 class="logo_text">Hello Snehashish!</h2>
                 <img class="image_logo1" src="logo.png" alt="logo">
             </div>
         </section>
@@ -247,15 +315,11 @@
             <div class="upper">
                 <div class="upper-main">
                     <button>
-                        <span class="img"><img src="./img/clock-m.png"></span>
+                        <span class="img"><img src="./img/user-m.png"></span>
                         <span class="text">
-                            My Uploads
+                            My Profile
                         </span>
-                        <span class="img"><img src="./img/stack.png"></span>
                     </button>
-                </div>
-                <div class="upper-main">
-                    <button><i class="fa fa-user-circle-o" aria-hidden="true"></i> My Profile</button>
                 </div>
                 <div class="upper-main1">
                     <h2>Please enter the below details to continue</h2>
@@ -264,14 +328,12 @@
             </div>
             <div class="middle">
                 <div class="upload-form">
-                    <h1>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Snehashish
-                        Das</h1>
-                    <h1>Oetkar Id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OET 1234</h1>
-                    <h1>Designation:&nbsp;&nbsp;&nbsp;&nbsp;Sales Representative</h1>
-                    <h1>Location:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mumbai</h1>
-                    <h1>Team:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modern
-                        Trade</h1>
-                    <h1>Repoting<br> Manager:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oetkar Exec</h1>
+                    <p><span>Name:</span><span>Snehashish Das</span></p>
+                    <p><span>Oetkar Id:</span><span>OET 1234</span></p>
+                    <p><span>Designation:</span><span>Sales Representative</span></p>
+                    <p><span>Location:</span><span>Mumbai</span></p>
+                    <p><span>Team:</span><span>Modern Trade</span></p>
+                    <p><span>Repoting Manager:</span><span>Oetkar Exec</span></p>
                 </div>
 
             </div>
