@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -18,7 +20,7 @@
         }
 
         .data h1 {
-            color: #ed1c24;
+            color: #f9022a;
         }
 
         .upper {
@@ -26,20 +28,20 @@
         }
 
         section.section1 {
-            border: 2px solid #ed1c24;
+            border: 2px solid #f9022a;
             border-radius: 11px;
             height: 90vh;
         }
 
         .upper-main button {
-            background-color: #ed1c24;
-            border: 1px solid #ed1c24;
+            background-color: #f9022a;
+            border: 1px solid #f9022a;
             color: #ffffff;
         }
 
         .upper-main button {
-            background-color: #ed1c24;
-            border: 1px solid #ed1c24;
+            background-color: #f9022a;
+            border: 1px solid #f9022a;
             color: #ffffff;
             padding: 18px 127px 18px 26px;
             border-radius: 13px;
@@ -70,9 +72,9 @@
         }
 
         .middle-main-button button {
-            background-color: #ed1c24;
+            background-color: #f9022a;
             color: #fff;
-            border: 1px solid #ed1c24;
+            border: 1px solid #f9022a;
             padding: 6px 16px 6px 16px;
             border-radius: 13px;
             font-weight: 100;
@@ -102,9 +104,9 @@
 
         .lower button {
             padding: 10px 100px 10px 100px;
-            background-color: #ed1c24;
+            background-color: #f9022a;
             color: #ffffff;
-            border: 1px solid #ed1c24;
+            border: 1px solid #f9022a;
             border-radius: 13px;
             font-size: 18px;
         }
@@ -127,15 +129,15 @@
         }
 
         .upper-main1 h4 {
-            color: #ed1c24;
+            color: #f9022a;
         }
 
         input#lname {
-            border: 1px solid #ed1c24;
+            border: 1px solid #f9022a;
         }
 
         input#fname {
-            border: 1px solid #ed1c24;
+            border: 1px solid #f9022a;
         }
 
         .middle {
@@ -144,21 +146,21 @@
         }
 
         input#fname {
-            border: 1px solid #ed1c24;
+            border: 1px solid #f9022a;
             padding: 15px 123px 15px 10px;
             border-radius: 14px;
         }
 
         input#lname {
-            border: 1px solid #ed1c24;
+            border: 1px solid #f9022a;
             padding: 15px 123px 15px 10px;
             border-radius: 14px;
         }
 
         .lower button {
             padding: 15px 100px 15px 100px;
-            color: #ed1c24;
-            border: 1px solid #ed1c24;
+            color: #f9022a;
+            border: 1px solid #f9022a;
             border-radius: 13px;
             font-size: 18px;
             background-color: #ffffff;
@@ -179,31 +181,32 @@
         }
 
         @media screen and (max-width: 375px) {
-            .upload-form h1{
+            .upload-form h1 {
                 padding: 13px !important;
             }
         }
 
         @media screen and (max-width: 360px) {
-            .upload-form h1{
+            .upload-form h1 {
                 padding: 13px;
             }
         }
 
 
         .upload-form h1 {
-            border: 1px solid #ed1c24;
+            border: 1px solid #f9022a;
             font-size: 18px;
             padding: 20px;
             border-radius: 15px;
-            color: #ed1c24;
+            color: #f9022a;
         }
+
     </style>
 </head>
 
 <body>
     <header>
-        
+
         <section class="section0">
             <script>
                 $(document).ready(function () {
@@ -235,13 +238,22 @@
             </nav>
             <div class="logo1">
                 <h2 class="logo_text">Hello Snehashish</h2>
-                <img class="image_logo1" src="logo.png" alt="logo" >
+                <img class="image_logo1" src="logo.png" alt="logo">
             </div>
         </section>
     </header>
     <section class="section1">
         <div class="bundle">
             <div class="upper">
+                <div class="upper-main">
+                    <button>
+                        <span class="img"><img src="./img/clock-m.png"></span>
+                        <span class="text">
+                            My Uploads
+                        </span>
+                        <span class="img"><img src="./img/stack.png"></span>
+                    </button>
+                </div>
                 <div class="upper-main">
                     <button><i class="fa fa-user-circle-o" aria-hidden="true"></i> My Profile</button>
                 </div>
@@ -252,17 +264,19 @@
             </div>
             <div class="middle">
                 <div class="upload-form">
-                    <h1>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Snehashish Das</h1>
+                    <h1>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Snehashish
+                        Das</h1>
                     <h1>Oetkar Id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OET 1234</h1>
                     <h1>Designation:&nbsp;&nbsp;&nbsp;&nbsp;Sales Representative</h1>
                     <h1>Location:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mumbai</h1>
-                    <h1>Team:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modern Trade</h1>
+                    <h1>Team:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modern
+                        Trade</h1>
                     <h1>Repoting<br> Manager:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oetkar Exec</h1>
                 </div>
 
             </div>
             <div class="lower">
-               
+
             </div>
         </div>
     </section>
