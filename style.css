@@ -215,4 +215,14 @@ a {
     padding: 15px;
     z-index: 1;
   }
+
+  button.btn {
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    justify-content: center;
+    padding: 15px;
+    width: 85%;
+  }
 }
