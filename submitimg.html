@@ -20,7 +20,6 @@
             }
 
             .btn1 {
-                padding: 15px 50px;
                 margin-bottom: 20px;
                 margin-top: 10px;
                 background: #fff;
@@ -30,16 +29,73 @@
                 border-radius: 10px;
                 font-size: 16px;
                 color: #f9022a;
-                width: 90%;
             }
 
             .mid img {
                 width: 360px;
+                width: 100%;
             }
 
             .middle-main-data {
-                margin-bottom: 10px;
+                margin-bottom: 20px;
             }
+
+            .logo1 {
+                margin: 4% 25px 0;
+            }
+
+            .logo_text {
+                flex: 1;
+                text-align: center;
+                padding-left: 25px;
+            }
+
+            .upper-main .img img {
+                width: 100%;
+            }
+
+            .upper-main .img {
+                width: 25px;
+                display: inline-flex;
+            }
+
+            .upper-main button {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 85%;
+                padding: 16px 20px;
+            }
+
+            .upper-main span {
+                padding: 0;
+            }
+
+            .upper-main .text {
+                flex: 1;
+                padding-left: 20px;
+                text-align: left;
+            }
+
+            .mein-cont {
+                width: 85%;
+                margin: auto;
+            }
+
+            .mein-cont .header {
+                font-size: 1.5rem;
+                font-weight: 100;
+
+            }
+
+            .btn {
+                width: 100% !important;
+                margin: 20px 0;
+            }
+        }
+
+        body {
+            margin: 0;
         }
 
     </style>
@@ -64,23 +120,23 @@
             <nav>
                 <div class="navbar">
                     <ul id="menu">
-                        <li>home</li>
-                        <li>upload image</li>
-                        <li>view gallery</li>
-                        <li>my uploads</li>
-                        <li>profile</li>
-                        <li>about the program</li>
-                        <li>how to use</li>
-                        <li>team & condition</li>
-                        <li>help desk</li>
-                        <li>sign out</li>
+                        <li><a href="./home.html">home</a></li>
+                        <li><a href="./UploadImages.html">upload image</a></li>
+                        <li><a href="./gallery.html">view gallery</a></li>
+                        <li><a href="./myUpload.html">my uploads</a></li>
+                        <li><a href="./MyProfile.html">profile</a></li>
+                        <li><a href="./about.html">about the program</a></li>
+                        <li><a href="./howtouse.html">how to use</a></li>
+                        <li><a href="./terms.html">team & condition</a></li>
+                        <li><a href="./Help.html">help desk</a></li>
+                        <li><a href="./login.html">sign out</a></li>
                     </ul>
                 </div>
             </nav>
-            <div class="logo1">
+            <!-- <div class="logo1">
                 <h2 class="logo_text">Hello Snehashish</h2>
                 <img class="image_logo1" src="logo.png" alt="logo">
-            </div>
+            </div> -->
         </section>
     </header>
     <section class="">
@@ -91,20 +147,21 @@
                 </div>
                 <div class="mid">
                     <div class="middle-main-data">
-                        <img src="images/image background.PNG">
+                        <img src="img/placeholder_img-half.png">
                     </div>
                     <div class="middle-main-data">
-                        <img src="images/image background.PNG">
+                        <img src="img/placeholder_img-half.png">
                     </div>
                     <div class="middle-main-data">
-                        <img src="images/image background.PNG">
+                        <img src="img/placeholder_img-half.png">
                     </div>
+
                 </div>
                 <div class="Bottom">
                     <div class="clike">
-                        <button class="btn1">Retake</button>
+                        <button class="btn1 btn">Retake</button>
                     </div>
-                    <button style="border-radius: 30px;" class="get_started_btn_1">Submit</button>
+                    <button class="get_started_btn_1 btn">Create Folder</button>
 
                 </div>
             </div>

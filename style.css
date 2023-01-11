@@ -203,9 +203,12 @@ a {
     /* height: 50vh; */
     width: 85vw;
     background: #fff;
-    color: #ED1C24;
     transition: 0.8s;
+  }
+
+  ul a {
     color: #cb0000;
+    text-decoration: none;
   }
 
   .open {

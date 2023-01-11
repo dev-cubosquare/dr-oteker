@@ -20,21 +20,51 @@
             }
 
             .btn1 {
-                padding: 15px 50px;
-                margin-bottom: 20px;
-                margin-top: 10px;
                 background: #fff;
                 border: 1px solid #f9022a;
-                margin-right: 10px;
-                margin-left: 10px;
+
                 border-radius: 10px;
                 font-size: 16px;
                 color: #f9022a;
+                flex: 1;
+                flex-basis: 40%;
+
+            }
+
+            .clike {
+                display: flex;
+                gap: 20px;
             }
 
             .mid img {
-                width: 360px;
+                width: 100%;
             }
+
+            .mein-cont {
+                width: 85%;
+                margin: auto;
+            }
+
+            .mein-cont .header {
+                font-size: 1.5rem;
+                font-weight: 100;
+
+            }
+
+            .btn {
+                width: 100% !important;
+                margin-top: 20px;
+            }
+
+            .get_started_btn_1 a {
+                color: white;
+            }
+
+
+        }
+
+        body {
+            margin: 0;
         }
 
     </style>
@@ -59,23 +89,23 @@
             <nav>
                 <div class="navbar">
                     <ul id="menu">
-                        <li>home</li>
-                        <li>upload image</li>
-                        <li>view gallery</li>
-                        <li>my uploads</li>
-                        <li>profile</li>
-                        <li>about the program</li>
-                        <li>how to use</li>
-                        <li>team & condition</li>
-                        <li>help desk</li>
-                        <li>sign out</li>
+                        <li><a href="./home.html">home</a></li>
+                        <li><a href="./UploadImages.html">upload image</a></li>
+                        <li><a href="./gallery.html">view gallery</a></li>
+                        <li><a href="./myUpload.html">my uploads</a></li>
+                        <li><a href="./MyProfile.html">profile</a></li>
+                        <li><a href="./about.html">about the program</a></li>
+                        <li><a href="./howtouse.html">how to use</a></li>
+                        <li><a href="./terms.html">team & condition</a></li>
+                        <li><a href="./Help.html">help desk</a></li>
+                        <li><a href="./login.html">sign out</a></li>
                     </ul>
                 </div>
             </nav>
-            <div class="logo1">
+            <!-- <div class="logo1">
                 <h2 class="logo_text">Hello Snehashish</h2>
                 <img class="image_logo1" src="logo.png" alt="logo">
-            </div>
+            </div> -->
         </section>
     </header>
     <section class="">
@@ -85,15 +115,14 @@
                     <h3>ABCD EFJ</h3>
                 </div>
                 <div class="mid">
-                    <img src="images/img.png">
+                    <img src="./img/palceholder_img.png">
                 </div>
                 <div class="Bottom">
                     <div class="clike">
-                        <button class="btn1">Retake</button>
-                        <button class="btn1">Upload More</button>
+                        <button class="btn1 btn">Retake</button>
+                        <button class="btn1 btn">Upload More</button>
                     </div>
-                    <button style="border-radius: 30px;" class="get_started_btn_1"><a href="./submitimg.html">
-                            Submit</a></button>
+                    <button class="get_started_btn_1 btn btn"><a href="./submitimg.html">Submit</a></button>
 
                 </div>
             </div>
