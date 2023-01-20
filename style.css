@@ -91,11 +91,13 @@ a {
   }
 
   .form {
-    display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 3rem;
-    margin-left: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
   }
 
   input#text_form {
