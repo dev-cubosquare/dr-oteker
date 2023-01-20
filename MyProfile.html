@@ -30,7 +30,7 @@
         section.section1 {
             border: 2px solid #f9022a;
             border-radius: 11px;
-            height: 90vh;
+            min-height: 90vh;
         }
 
         .upper-main button {
@@ -57,6 +57,9 @@
         .upper-main {
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
         }
 
 
@@ -248,7 +251,7 @@
         }
 
         section.section1 {
-            height: 83vh;
+            min-height: 83vh;
             border-radius: 25px 25px 0 0;
         }
 
@@ -267,6 +270,11 @@
             margin: auto;
             margin-top: 30px;
             display: block;
+        }
+
+        .notice {
+            width: 85%;
+            max-width: 350px;
         }
 
     </style>
@@ -320,6 +328,9 @@
                             My Profile
                         </span>
                     </button>
+                    <div class="notice error dismissible">
+                        <i class="fas fa-exclamation-circle"></i><span>dismissible error message here</span>
+                    </div>
                 </div>
                 <div class="upper-main1">
                     <h2>Please enter the below details to continue</h2>
@@ -342,6 +353,7 @@
             </div>
         </div>
     </section>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

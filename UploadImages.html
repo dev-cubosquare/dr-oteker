@@ -60,6 +60,9 @@
         .upper-main {
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
         }
 
 
@@ -105,7 +108,7 @@
             flex-direction: column-reverse;
         }
 
-        .lower button {
+        input.btn {
             padding: 10px 100px 10px 100px;
             background-color: #ed1c24;
             color: #ffffff;
@@ -150,16 +153,17 @@
             justify-content: center;
         }
 
-        input#fname {
+        input[type="submit"],
+        input[type="text"],
+        input[type="file"] {
             border: 1px solid #ed1c24;
             padding: 15px 123px 15px 10px;
             border-radius: 14px;
+            outline-color: #ed1c24;
         }
 
-        input#lname {
-            border: 1px solid #ed1c24;
-            padding: 15px 123px 15px 10px;
-            border-radius: 14px;
+        input[type="submit"] {
+            margin-bottom: 20px;
         }
 
         .lower button {
@@ -242,8 +246,53 @@
         }
 
         section.section1 {
-            height: 83vh;
+            min-height: 83vh;
             border-radius: 25px 25px 0 0;
+            height: auto;
+        }
+
+        .form-control {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-control .error {
+            color: #ed1c24;
+            font-weight: 400;
+            font-size: 0.9rem;
+            padding-left: 0.5rem;
+        }
+
+        .form-control ::placeholder {
+            color: transparent;
+        }
+
+        .form-control label {
+            position: absolute;
+            top: 20%;
+            left: 1rem;
+            font-size: 1.5rem;
+            color: #a5a5a5;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            font-weight: 400;
+        }
+
+        .form-control input:focus~label,
+        .form-control input:not(:placeholder-shown)~label {
+            top: -10%;
+            left: 10px;
+            font-size: 1rem;
+            color: #ed1c24;
+            background-color: white;
+            border-radius: 50vh;
+            border: 1px solid #ed1c24;
+            padding: 0 0.6rem;
+        }
+
+        .notice {
+            width: 85%;
+            max-width: 350px;
         }
 
     </style>
@@ -294,6 +343,9 @@
                     <a class="btn" href="./test.html">
                         <span class="material-symbols-outlined">photo_camera</span>
                         Upload Images </a>
+                    <div class="notice error dismissible">
+                        <i class="fas fa-exclamation-circle"></i><span>dismissible error message here</span>
+                    </div>
                 </div>
                 <div class="upper-main1">
                     <h2>Please enter the below details to continue</h2>
@@ -304,22 +356,45 @@
                 <div class="upload-form">
                     <form>
                         <label for="fname"></label><br>
-                        <input type="text" id="fname" name="fname" placeholder="Name of Retail Store*"><br>
-                        <label for="lname"></label><br>
-                        <input type="text" id="lname" name="lname" placeholder="Location | Town*"><br><br>
-                        <input type="text" id="lname" name="lname" placeholder="Retailer Type*"><br><br>
-                        <input type="text" id="lname" name="lname" placeholder="Reporting Manager*"><br><br>
-                        <input type="text" id="lname" name="lname" placeholder="Team*"><br><br>
+                        <div class="form-control">
+                            <input type="text" id="retailer-name" name="fname" placeholder="Name of Retail Store*">
+                            <label for="retailer-name">Name of Retail Store*</label>
+                            <span class="error">Name of retailer required</span>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" id="location" name="location" placeholder="Location | Town*">
+                            <label for="location">Location | Town*</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" id="retailer-type" name="retailer-type" placeholder="Retailer Type*">
+                            <label for="retailer-type">Retailer Type*</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" id="reporting-manager" name="reporting-manager"
+                              placeholder="Reporting Manager*">
+                            <label for="reporting-manager">Reporting Manager*</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" id="team" name="team" placeholder="Team*">
+                            <label for="team">Team*</label>
+                        </div>
 
+                        <div class="form-control">
+                            <input type="file" accept="image/*" style="
+                            padding: 16px !important;
+                        " capture="camera" id="image" name="image" placeholder="Team*">
+                            <label for="location">Click Image*</label>
+                        </div>
+
+                        <input type="submit" class="btn">
                     </form>
                 </div>
 
             </div>
-            <div class="lower">
-                <button class="btn">Add Images</button>
-            </div>
         </div>
     </section>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>

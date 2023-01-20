@@ -33,13 +33,13 @@
             height: 86vh;
         }
 
-        .upper-main button {
+        .upper-main .sz-btn {
             background-color: #f9022a;
             border: 1px solid #f9022a;
             color: #ffffff;
         }
 
-        .upper-main button {
+        .upper-main .sz-btn {
             background-color: #f9022a;
             border: 1px solid #f9022a;
             color: #ffffff;
@@ -49,11 +49,16 @@
             font-size: 18px;
             /* margin-left: 2px; */
             font-weight: 200;
+            font-family: 'OETKER-FONT';
         }
 
         .upper-main {
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
         }
 
 
@@ -154,7 +159,7 @@
 
         .box {
             border: 1px solid #d9d9d9;
-            padding: 50px;
+            /* padding: 50px; */
             width: 50px;
             height: 33px;
             border-radius: 13px;
@@ -168,7 +173,7 @@
 
             .box {
                 border: 1px solid #d9d9d9;
-                padding: 50px;
+                /* padding: 50px; */
                 width: 12px;
                 height: 6px;
                 border-radius: 13px;
@@ -199,12 +204,18 @@
             display: inline-flex;
         }
 
-        .upper-main button {
+        .upper-main .sz-btn {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 85%;
             padding: 16px 20px;
+        }
+
+        .upper-main .sz-btn .status {
+            padding-right: 0.3rem;
+            font-size: 0.9rem;
+            align-self: flex-end;
         }
 
         .upper-main span {
@@ -222,17 +233,35 @@
             flex-wrap: wrap;
             margin: 40px auto 1px;
             gap: 10px;
-            align-items: center;
-            justify-content: center;
+            align-content: flex-start;
+            justify-content: space-between;
+
             overflow-y: auto;
             flex: 1;
+            width: 85%;
+            max-width: 350px;
         }
 
         .flex_box .box {
-            flex-basis: 45%;
+            flex-basis: 48%;
             aspect-ratio: 1;
             height: auto;
+            overflow: hidden;
         }
+
+        @media (max-width: 297px) {
+            .flex_box .box {
+                flex-basis: 100%;
+                aspect-ratio: 1 / .5;
+            }
+        }
+
+        .flex_box .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
 
         body {
             margin: 0;
@@ -249,6 +278,65 @@
             height: 100%;
             flex-direction: column;
 
+        }
+
+        .notice {
+            width: 85%;
+            max-width: 350px;
+        }
+
+
+        #filters {
+            background-color: white;
+            width: 100%;
+            max-width: 350px;
+            border: 2px solid #f9022a;
+            border-radius: 15px;
+            position: absolute;
+            top: 0;
+            max-height: 80vh;
+            transition: all 1s ease;
+        }
+
+        #filters.sz-hide {
+            opacity: 0.7;
+            max-height: 0;
+            overflow: hidden;
+            border-color: transparent;
+            background-color: transparent;
+        }
+
+        #filters .sz-btn {
+            background-color: white;
+            width: 100%;
+            border: transparent;
+        }
+
+        #filters .text {
+            color: #f9022a;
+        }
+
+        #filters form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #filters input {
+            width: 90%;
+            border: none;
+            outline: 1px solid #f9022a;
+            font-size: 1.1rem;
+            text-align: center;
+            padding: 0.6rem;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        #filters input[type="submit"] {
+            background-color: #f9022a;
+            color: white;
         }
 
     </style>
@@ -296,29 +384,76 @@
         <div class="bundle">
             <div class="upper">
                 <div class="upper-main">
-                    <button>
+                    <button class="sz-btn filter-btn">
                         <span class="img"><img src="./img/picture-m.png"></span>
                         <span class="text">
                             Gallery View
                         </span>
+                        <span class="status">+4 Filters</span>
                         <span class="img"><img src="./img/stack.png"></span>
                     </button>
+                    <div class="filters sz-hide" id="filters">
+                        <div class="sz-btn filters">
+                            <span class="img"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M2.09284 23.6929C1.70232 24.0834 1.70232 24.7166 2.09284 25.1071C2.48337 25.4976 3.11653 25.4976 3.50706 25.1071L2.09284 23.6929ZM9.19995 18L9.90706 17.2929C9.51653 16.9024 8.88337 16.9024 8.49284 17.2929L9.19995 18ZM12.4 21.2L11.6928 21.9071C11.8804 22.0946 12.1347 22.2 12.4 22.2C12.6652 22.2 12.9195 22.0946 13.1071 21.9071L12.4 21.2ZM19.5999 14L20.3071 13.2929C20.1195 13.1054 19.8652 13 19.5999 13C19.3347 13 19.0804 13.1054 18.8928 13.2929L19.5999 14ZM25.2928 21.1071C25.6834 21.4976 26.3165 21.4976 26.7071 21.1071C27.0976 20.7166 27.0976 20.0834 26.7071 19.6929L25.2928 21.1071ZM3.50706 25.1071L9.90706 18.7071L8.49284 17.2929L2.09284 23.6929L3.50706 25.1071ZM8.49284 18.7071L11.6928 21.9071L13.1071 20.4929L9.90706 17.2929L8.49284 18.7071ZM13.1071 21.9071L20.3071 14.7071L18.8928 13.2929L11.6928 20.4929L13.1071 21.9071ZM18.8928 14.7071L25.2928 21.1071L26.7071 19.6929L20.3071 13.2929L18.8928 14.7071ZM5.99995 2.2H21.9999V0.199997H5.99995V2.2ZM25.7999 6V22H27.7999V6H25.7999ZM21.9999 25.8H5.99995V27.8H21.9999V25.8ZM2.19995 22V6H0.199951V22H2.19995ZM5.99995 25.8C3.90127 25.8 2.19995 24.0987 2.19995 22H0.199951C0.199951 25.2032 2.7967 27.8 5.99995 27.8V25.8ZM25.7999 22C25.7999 24.0987 24.0986 25.8 21.9999 25.8V27.8C25.2032 27.8 27.7999 25.2032 27.7999 22H25.7999ZM21.9999 2.2C24.0986 2.2 25.7999 3.90131 25.7999 6H27.7999C27.7999 2.79675 25.2032 0.199997 21.9999 0.199997V2.2ZM5.99995 0.199997C2.7967 0.199997 0.199951 2.79675 0.199951 6H2.19995C2.19995 3.90131 3.90127 2.2 5.99995 2.2V0.199997ZM9.79995 8.4C9.79995 9.17319 9.17315 9.8 8.39995 9.8V11.8C10.2777 11.8 11.7999 10.2778 11.7999 8.4H9.79995ZM8.39995 9.8C7.62675 9.8 6.99995 9.17319 6.99995 8.4H4.99995C4.99995 10.2778 6.52218 11.8 8.39995 11.8V9.8ZM6.99995 8.4C6.99995 7.6268 7.62675 7 8.39995 7V5C6.52218 5 4.99995 6.52223 4.99995 8.4H6.99995ZM8.39995 7C9.17315 7 9.79995 7.6268 9.79995 8.4H11.7999C11.7999 6.52223 10.2777 5 8.39995 5V7Z"
+                                      fill="#f9022a" />
+                                </svg>
+                            </span>
+                            <span class="text">
+                                Filters
+                            </span>
+                            <span class="img close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M24.1 12.7335L30.4 15.9627L16 23.3438L1.59998 15.9627L8.01512 12.6744M24.1 19.7897L30.4 23.0189L16 30.4L1.59998 23.0189L8.01512 19.7306M16 1.60001L30.4 8.98112L16 16.3622L1.59998 8.98112L16 1.60001Z"
+                                      stroke="#f9022a" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round" />
+                                </svg></span>
+                        </div>
+                        <form>
+                            <input type="text" name="sr-name" placeholder="SR Name">
+                            <input type="text" name="zone" placeholder="Zone">
+                            <input type="text" name="town" placeholder="Town">
+                            <input type="text" name="team" placeholder="Team">
+                            <input type="submit" value="Apply Fliters">
+                        </form>
+                    </div>
+                    <div class="notice info dismissible">
+                        <i class="fas fa-exclamation-circle"></i><span>dismissible info message here</span>
+                    </div>
                 </div>
             </div>
             <div class="flex_box">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div class="box"><img src="https://via.placeholder.com/150x300/FF0000/FFFFFF?Text=DrOteker"></div>
+                <div class="box"><img src="https://via.placeholder.com/300x150/FF0000/FFFFFF?Text=DrOteker"></div>
+                <div class="box"><img src="https://via.placeholder.com/700x300/FFFF00/FFFFFF?Text=DrOteker"></div>
+                <div class="box"><img src="https://via.placeholder.com/300x700/FF00FF/FFFFFF?Text=DrOteker"></div>
+                <div class="box"><img src="https://via.placeholder.com/150/0000FF/FFFFFF?Text=DrOteker"></div>
+                <div class="box"><img src="https://via.placeholder.com/150/FF0000/FFFFFF?Text=DrOteker"></div>
             </div>
         </div>
 
         </div>
     </section>
+    <script src="./scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".filter-btn").click(function () {
+                $("#filters").removeClass("sz-hide");
+            });
+
+            $("#filters input[type='submit']").click(function (e) {
+                e.preventDefault();
+                $("#filters").addClass("sz-hide");
+            });
+            $("#filters .close").click(function (e) {
+                e.preventDefault();
+                $("#filters").addClass("sz-hide");
+            });
+        });
+    </script>
 </body>
 
 </html>

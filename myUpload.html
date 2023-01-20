@@ -30,7 +30,7 @@
         section.section1 {
             border: 2px solid #f9022a;
             border-radius: 11px;
-            height: 90vh;
+            min-height: 90vh;
         }
 
         .upper-main button {
@@ -54,6 +54,9 @@
         .upper-main {
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
         }
 
 
@@ -126,6 +129,10 @@
             display: flex;
             justify-content: center;
             padding-bottom: 30px;
+
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
 
@@ -171,7 +178,7 @@
         }
 
         section.section1 {
-            height: 83vh;
+            min-height: 83vh;
             border-radius: 25px 25px 0 0;
         }
 
@@ -183,6 +190,7 @@
 
         .middle-main {
             display: block;
+            margin-bottom: 140px;
 
         }
 
@@ -201,6 +209,13 @@
 
         .middle-main-data {
             border-radius: 25px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .notice {
+            width: 85%;
+            max-width: 350px;
         }
 
     </style>
@@ -255,12 +270,31 @@
                         </span>
                         <span class="img"><img src="./img/stack.png"></span>
                     </button>
+                    <div class="notice error dismissible">
+                        <i class="fas fa-exclamation-circle"></i><span>dismissible error message here</span>
+                    </div>
+
                 </div>
             </div>
             <div class="middle">
                 <div class="middle-main">
                     <div class="middle-main-data">
-                        <img src="./img/placeholder_img-half.png">
+                        <img src="https://via.placeholder.com/150x300/FF0000/FFFFFF?Text=DrOteker">
+                        <button>ABCD EFG</button>
+                    </div>
+
+                    <div class="middle-main-data">
+                        <img src="https://via.placeholder.com/150/FF0000/FFFFFF?Text=DrOteker">
+                        <button>ABCD EFG</button>
+                    </div>
+
+                    <div class="middle-main-data">
+                        <img src="https://via.placeholder.com/700x300/FFFF00/FFFFFF?Text=DrOteker">
+                        <button>ABCD EFG</button>
+                    </div>
+
+                    <div class="middle-main-data">
+                        <img src="https://via.placeholder.com/150/0000FF/FFFFFF?Text=DrOteker">
                         <button>ABCD EFG</button>
                     </div>
                 </div>
@@ -271,6 +305,7 @@
             </div>
         </div>
     </section>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

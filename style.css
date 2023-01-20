@@ -228,4 +228,50 @@ a {
     padding: 16px;
     width: 85%;
   }
+
+  .notice {
+    text-align: center;
+    /* margin: auto; */
+    padding: 0.5em;
+    border-radius: 15px;
+  }
+
+  .notice.error {
+    background-color: #ff6060;
+    color: white;
+  }
+
+  .notice.success {
+    background-color: #60ffb5;
+    color: white;
+  }
+
+  .notice.info {
+    background-color: #60c5ff;
+    color: white;
+  }
+
+  .dismissible {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+  }
+
+  .dismissible span {
+    flex: 1;
+    text-align: left;
+  }
+
+  div.notice span {
+    padding-left: 0.5em;
+  }
+
+  /* .dismissable::after {
+    font-family: FontAwesome;
+    content: "\f00d";
+    float: right;
+    cursor: pointer;
+    padding: 0 0.5em;
+  } */
 }

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        @media screen and (max-width:764px) {
+
+            .upper {
+                padding-top: 6rem;
+                text-align: center;
+            }
+
+            .upper h1 {
+                color: #f9022a;
+                font-family: system-ui;
+                font-weight: 400;
+            }
+
+            .upper p {
+                font-size: 1.3rem;
+            }
+
+            .lower {
+                border-radius: 40px 40px 0px 0px;
+                background-color: #f9022a;
+                height: 48.5rem;
+                margin-top: 3rem;
+                height: fit-content;
+            }
+
+            .icon {
+                border: 3px solid white;
+                height: 17vh;
+                width: 35vw;
+                margin: 1rem;
+                border-radius: 1rem;
+            }
+
+            .lower-upper {
+                display: flex;
+                padding-left: 1rem;
+                justify-content: center;
+            }
+
+            .lower-down {
+                display: flex;
+                padding-left: 1rem;
+                justify-content: center;
+            }
+
+            .icon i {
+                font-size: 4rem;
+                color: white;
+                padding-left: 2.2rem;
+                padding-top: 1rem;
+            }
+
+            .lower-down span {
+                font-size: 1.3rem;
+                color: white;
+                padding-left: 1.5rem;
+                padding-top: 0.5rem;
+            }
+
+            .lower-upper span {
+                font-size: 1.2rem;
+                color: white;
+                padding-left: 1rem;
+                padding-top: 0.5rem;
+            }
+
+            .fa-user:before {
+                content: "\f007";
+                padding-left: 1rem;
+            }
+
+            .fa-clock-o:before {
+                content: "\f017";
+                padding-left: 1rem;
+            }
+
+            .lower p {
+                font-size: 1.4rem;
+                color: white;
+                text-align: center;
+                padding: 2rem;
+            }
+
+            .img.image_logo1 {
+                width: 10rem;
+            }
+
+            html {
+                min-height: 100%;
+                position: relative;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            .logo_text {
+                text-align: center;
+                font-size: 1.8rem;
+                margin-bottom: 0;
+            }
+
+            .subtext {
+                text-align: center;
+                font-size: 1.5rem;
+                margin: 0;
+                font-weight: 400;
+                color: #333;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.1em;
+            }
+
+            .lower {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+
+            .lower p {
+                padding: 0;
+            }
+
+            .icon {
+                text-align: center;
+                border: 2px solid white;
+            }
+
+            .icon .img {
+                width: 65px;
+                height: 65px;
+                margin: 20px auto;
+                display: block;
+            }
+
+            .subtext .img {
+                width: 25px;
+                height: 25px;
+            }
+
+            .subtext .img img,
+            .icon .img img {
+                width: 100%;
+                /* height: 100%; */
+            }
+
+            .flex_box {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                padding-top: 30px;
+
+            }
+
+            .logo1 {
+                margin-top: 3rem;
+            }
+
+            .icon .label {
+                font-size: 1.2rem;
+                color: white;
+            }
+
+            .notice {
+                width: 85%;
+                margin: 10px auto;
+                max-width: 350px;
+            }
+
+
+        }
+
+        /* @media screen and (min-width:412px) and (max-width:480px) {
+            .lower {
+                border-radius: 46px 46px 0px 0px;
+                background-color: red;
+                height: 33.5em;
+                margin-top: 12rem;
+                height: fit-content;
+            }
+
+            .lower p {
+                font-size: 1.4rem;
+                color: white;
+                text-align: center;
+                padding: 2rem;
+            }
+
+        } */
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+
+            <section class="section0">
+                <script>
+                    $(document).ready(function () {
+                        $(".humburger").click(function () {
+                            $("#menu").toggleClass("open");
+                        });
+                    });
+                </script>
+                <div class="humburger">
+                    <div class="hum"></div>
+                    <div class="hum"></div>
+                    <div class="hum"></div>
+                </div>
+                <nav>
+                    <div class="navbar">
+                        <ul id="menu">
+                            <li><a href="./home.html">home</a></li>
+                            <li><a href="./UploadImages.html">upload image</a></li>
+                            <li><a href="./gallery.html">view gallery</a></li>
+                            <li><a href="./myUpload.html">my uploads</a></li>
+                            <li><a href="./MyProfile.html">profile</a></li>
+                            <li><a href="./about.html">about the program</a></li>
+                            <li><a href="./howtouse.html">how to use</a></li>
+                            <li><a href="./terms.html">team & condition</a></li>
+                            <li><a href="./Help.html">help desk</a></li>
+                            <li><a href="./login.html">sign out</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="logo1">
+                    <img class="image_logo1" src="logo.png" alt="logo">
+                </div>
+                <h2 class="logo_text">Hello Snehashish!</h2>
+                <h3 class="subtext">Wohoo! Keep up the good work. <span class="img"><img src="./img/loader.png"
+                          alt=""></span></h3>
+                <div class="notice success dismissible">
+                    <i class="fas fa-exclamation-circle"></i><span>dismissible success message here</span>
+                </div>
+            </section>
+        </header>
+        <div class="lower">
+            <div class="flex_box">
+                <div class="icon">
+                    <a href="./gallery.html">
+                        <span class="img"><img src="./img/picture.png" alt=""></span>
+                        <span class="label">View Gallery</span>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="./UploadImages.html">
+                        <span class="img">
+                            <img src="./img/cam.png" alt="">
+                        </span>
+                        <span class="label">Upload Images</span></a>
+                </div>
+                <div class="icon">
+                    <a href="./MyProfile.html">
+                        <span class="img">
+                            <img src="./img/user.png" alt="">
+                        </span>
+                        <span class="label">My Profile</span>
+                    </a>
+                </div>
+            </div>
+            <p>You will remain signed</p>
+        </div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

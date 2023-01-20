@@ -12,6 +12,8 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <style>
         @media only screen and (max-width: 764px) {
             .user {
@@ -108,6 +110,10 @@
                 color: white;
             }
 
+            .notice {
+                width: 89%;
+            }
+
         }
 
     </style>
@@ -128,6 +134,24 @@
         <h2 class=" title_1">Hello! Please enter your details to login</h2>
     </div>
     <div class="form">
+        <div class="notice error dismissible">
+            <i class="fas fa-xmark-circle"></i><span>dismissible error message here</span>
+        </div>
+        <div class="notice success dismissible">
+            <i class="fas fa-circle-check"></i><span>dismissible success message here</span>
+        </div>
+        <div class="notice info dismissible">
+            <i class="fas fa-exclamation-circle"></i><span>dismissible info messaeg here</span>
+        </div>
+        <div class="notice error">
+            <i class="fas fa-xmark-circle"></i><span>error message here</span>
+        </div>
+        <div class="notice success">
+            <i class="fas fa-circle-check"></i><span>success message here</span>
+        </div>
+        <div class="notice info">
+            <i class="fas fa-exclamation-circle"></i><span>info messaeg here</span>
+        </div>
         <div class="user">
             <div class="lable">User ID</div>
             <div class="input"><input type="text" placeholder="OET -XXXX"></div>
@@ -141,6 +165,8 @@
     <footer class="footer">
         <h3 class="alredy_1">Forgot Password? <span class="tap">Tap here to reset</span></h3>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
