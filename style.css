@@ -269,6 +269,45 @@ a {
     padding-left: 0.5em;
   }
 
+  #single-image-modal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #000d;
+    z-index: 100;
+    left: 0;
+    right: 0;
+
+  }
+
+  #single-image-modal .modal-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #single-image-modal img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  #single-image-modal .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+  }
+
   /* .dismissable::after {
     font-family: FontAwesome;
     content: "\f00d";
