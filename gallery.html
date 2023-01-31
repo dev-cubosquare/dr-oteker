@@ -209,6 +209,7 @@
             align-items: center;
             justify-content: space-between;
             width: 85%;
+            max-width: 350px;
             padding: 16px 20px;
         }
 
@@ -325,7 +326,8 @@
             margin-bottom: 1rem;
         }
 
-        #filters input {
+        #filters input,
+        #filters select {
             width: 90%;
             border: none;
             outline: 1px solid #f9022a;
@@ -334,6 +336,17 @@
             padding: 0.6rem;
             border-radius: 10px;
             margin-bottom: 10px;
+            background-color: transparent;
+            position: relative;
+        }
+
+        #filters select[data-value=""],
+        #filters option[value=""] {
+            color: #888;
+        }
+
+        #filters select option {
+            color: #333
         }
 
         #filters input[type="submit"] {
@@ -415,10 +428,41 @@
                                 </svg></span>
                         </div>
                         <div class="form">
-                            <input type="text" name="sr-name" placeholder="SR Name">
-                            <input type="text" name="zone" placeholder="Zone">
-                            <input type="text" name="town" placeholder="Town">
-                            <input type="text" name="team" placeholder="Team">
+
+                            <!-- Change input to select -->
+
+                            <select name="sr-name" id="sr-name" onchange="this.setAttribute('data-value', this.value)"
+                              data-value="">
+                                <option value="" selected>SR Name</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+
+                            <select name="zone" id="zone" onchange="this.setAttribute('data-value', this.value)"
+                              data-value="">
+                                <option value="" selected>Zone</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+
+                            <select name="town" id="town" onchange="this.setAttribute('data-value', this.value)"
+                              data-value="">
+                                <option value="" selected>Town</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+
+                            <select name="team" id="team" onchange="this.setAttribute('data-value', this.value)"
+                              data-value="">
+                                <option value="" selected>Team</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+
                             <input type="submit" value="Apply Fliters">
                         </div>
                     </div>
